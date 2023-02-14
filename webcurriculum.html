@@ -1,0 +1,904 @@
+<!doctype html>
+<html>
+
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+     
+    <title>Rodrigo's Web Curriculum</title>
+
+    <link rel="stylesheet" href="normalize.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Work+Sans&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <style>
+
+        body{
+
+            background-image: linear-gradient(15deg, rgb(227, 231, 252) 0%, #ecfffe 100%);
+            font-family: 'Work Sans', sans-serif;
+
+        }
+
+        a{
+            text-decoration:solid;
+            color:rgb(255, 153, 0)
+        }
+
+        h1, h2, h3{
+
+            font-family: 'Lato', sans-serif;
+        }
+
+        nav{
+
+            display:flex;
+            background-color: #622400 ;
+            justify-content: center;
+            position:fixed;
+            width:100%;
+            z-index: 1;
+
+        }
+
+        nav ul {
+
+            display:flex;
+            align-items: center;
+            padding: 0 10%;
+            list-style:none;
+
+        }
+
+        nav ul li a{
+
+            font-size:16px;
+            padding: 0 15px;
+            color: white;
+            transition:0.2s;
+            text-transform:uppercase;
+
+        }
+
+        nav ul li a:hover{
+
+            transition:0.2s;
+            color:rgb(255, 153, 0);
+
+        }
+
+        .container{
+
+            position:relative;
+            width:100%;
+            max-width: 1200px;
+            margin:0 auto;
+            padding: 0 15px;
+
+        }
+
+        .rodrigoserra{
+            padding-top:130px;
+
+        }
+
+        .rodrigoserra img{
+
+            border-style:none;
+            
+            border-radius:50%;
+            margin: 0 auto;
+            max-width:400px;
+            display: block;
+
+        }
+
+        h1{
+            color:black;
+            text-align: center;
+            font-size: 24px;
+            margin:30px 0 px 100px; 
+            transition:ease-in-out;
+            
+
+        }
+
+    
+
+        .aboutme{
+
+            width:90%;
+            max-width:1100px;
+            height:auto;
+            background-color: #d15b17;
+            text-align: center;
+            padding:40px 50px 70px;
+            margin: 100px auto;
+            box-shadow: 5px 5px 0px #622400,-10px -10px 0px rgba(181, 66, 12, 0.973);
+            
+        }
+
+        #aboutme h2{
+            color:rgb(230, 144, 16);
+            text-decoration: underline;
+            margin-bottom: 50px;
+            
+        }
+
+    
+
+    
+
+        .aboutme-section{
+
+            padding:5px;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            flex-flow: wrap;
+            
+
+        }
+
+        .aboutme-image{
+            height:450px;
+            width:400px;
+            background-image: url("imagens/rodrigo-2023.jpg");
+            background-size: cover;
+            background-position: center;
+            transition: 1s ease-in-out;
+
+        }
+
+        .aboutme-image:hover{
+
+            
+            transform: translate(40px,40px);
+            
+
+        }
+
+        .aboutme-text{
+            height:auto;
+            width:50%;
+            margin-left: 40px;
+            text-align: left;
+            color:black;
+            font-size: 18px;
+            text-decoration:solid;
+        }
+
+        #skills{
+
+            padding:5px;
+            margin:5%;
+            width:90%;
+            height:auto;
+            text-align: center;
+        }
+
+        .skills{
+
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            flex-flow:wrap;
+
+        }
+
+
+        #skills h2{
+            color:rgb(230, 144, 16);
+            text-decoration: underline;
+            margin-bottom: 50px;
+            
+
+        }
+
+        
+
+        .python-skills{
+            width:500px;
+            height:500px;
+            background-color: white;
+            position: relative;
+            border-radius: 10px;
+            background-image: url("logos/phyton-logo.jpg");
+            margin:20px;
+            background-size: cover;
+            background-position: center;
+            box-shadow: 0px 5px 5px #622400;
+            
+        }
+
+        .html5-skills{
+            width:500px;
+            height:500px;
+            background-color: white;
+            position: relative;
+            border-radius: 10px;
+            background-image: url("logos/html5-logo.jpg");
+            margin:20px;
+            background-size: cover;
+            background-position: center;
+            box-shadow: 0px 5px 5px #622400;
+            
+        }
+
+        .css-skills{
+            width:500px;
+            height:500px;
+            background-color: white;
+            position: relative;
+            border-radius: 10px;
+            background-image: url("logos/css3-logo.jpg");
+            margin:20px;
+            background-size: cover;
+            background-position: center;
+            box-shadow: 0px 5px 5px #622400;
+            
+        }
+
+        .mysql-skills{
+            width:500px;
+            height:500px;
+            background-color: white;
+            position: relative;
+            border-radius: 10px;
+            background-image: url("logos/mysql-logo.jpg");
+            margin:20px;
+            background-size:cover;
+            background-position:center;
+            box-shadow: 0px 5px 5px #622400;
+            
+        }
+
+        .solidworks-skills{
+            width:500px;
+            height:500px;
+            background-color: white;
+            position: relative;
+            border-radius: 10px;
+            background-image: url("logos/solidworks-logo.jpg");
+            margin:20px;
+            background-size:cover;
+            background-position:center;
+            box-shadow: 0px 5px 5px #622400;
+            
+        }
+
+        .java-skills{
+            width:500px;
+            height:500px;
+            background-color: white;
+            position: relative;
+            border-radius: 10px;
+            background-image: url("logos/JavaScript-Logo.jpg");
+            margin:20px;
+            background-size:cover;
+            background-position:center;
+            box-shadow: 0px 5px 5px #622400;
+            
+        }
+
+        .php-skills{
+            width:500px;
+            height:500px;
+            background-color: white;
+            position: relative;
+            border-radius: 10px;
+            background-image: url("logos/php-logo.jpg");
+            margin:20px;
+            background-size:cover;
+            background-position:center;
+            box-shadow: 0px 5px 5px #622400;
+            
+        }
+
+        .english-skills{
+            width:500px;
+            height:500px;
+            background-color: white;
+            position: relative;
+            border-radius: 25px;
+            background-image: url("logos/english-flag.jpg");
+            margin:20px;
+            background-size:cover;
+            background-position:center;
+            box-shadow: 0px 10px 10px #622400;
+            
+            
+        }
+
+        .spanish-skills{
+            width:500px;
+            height:500px;
+            background-color: white;
+            position: relative;
+            border-radius: 25px;
+            background-image: url("logos/spanish-flag.jpg");
+            margin:20px;
+            background-size:cover;
+            background-position:center;
+            box-shadow: 0px 10px 10px #622400 ;
+            
+            
+        }
+
+
+       
+
+        .text{
+            position: absolute;
+            height:25px;
+            width:480px;
+            left:0;
+            bottom:0;
+            z-index:2;
+            background-color: rgba(205, 87, 14, 0.973);
+            overflow: hidden;
+            transition: 0.2s;
+            padding:10px;
+            border-radius: 10px;
+        }
+
+        .text1{
+            position: absolute;
+            height:25px;
+            width:480px;
+            left:0;
+            bottom:0;
+            z-index:2;
+            background-color: rgba(205, 87, 14, 0.973);
+            overflow:hidden;
+            transition: 0.2s;
+            padding:10px;
+            border-radius: 10px;
+        }
+
+        .text:hover{
+            height:175px;
+            transition:0.3s
+            
+        }
+
+        .text1:hover{
+            height:175px;
+            transition:0.3s
+        }
+
+        .text h3{
+
+            margin-top:3px;
+        }
+
+        .text1 h3{
+
+            margin-top:3px;
+        }
+
+        .content{
+            color:black;
+        }
+
+        .button{
+            border:5px solid rgb(164, 163, 255);
+            border-radius:10px;
+            width:160px;
+            margin-bottom: 60px;
+            margin-left: 10px;
+
+        }
+
+        .button1{
+            text-decoration: underline;
+            border-radius:10px;
+            width:160px;
+            margin-bottom: 60px;
+            margin-left: 10px;
+            color:white
+            
+
+        }
+
+        #languages{
+
+            padding:5px;
+            margin:5%;
+            width:90%;
+            height:auto;
+            text-align: center;
+        }
+
+        .languages{
+
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            flex-flow:wrap;
+
+        }
+
+    
+
+        #languages h2{
+            color:rgb(230, 144, 16);
+            text-decoration: underline;
+            margin-bottom: 50px;
+            transition: ease-in-out;
+        }
+
+       
+        .project{
+
+            width:100%;
+            height:auto;
+            background-color: #d15b17;
+            text-align: center;
+            padding:40px 50px 70px;
+            margin: 100px auto;
+            box-shadow: 10px 10px 10px #622400;
+        }
+
+        .project-section{
+
+            background-color: #d15b17;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            flex-flow: wrap;
+
+            }
+
+        .project-image{
+                height:550px;
+                width:500px;
+                background-image: url("imagens/project-image.jpg");
+                background-size: cover;
+                
+            }
+
+        
+
+         .project-text{
+                height:auto;
+                width:50%;
+                margin-left: 40px;
+                align-items:center;
+                color:black;
+                font-size: 18px;
+                
+            }
+
+         #project h2{
+            color:rgb(230, 144, 16);
+            text-decoration: underline;
+            margin-bottom: 50px;
+            
+        }
+
+        .project-text a{
+
+            color:white;
+            text-transform: uppercase;
+            
+            
+            
+        }
+
+        .project-text a:hover{
+
+            transition: 0.2s;
+            color:green;
+        }
+
+        
+
+
+        .contact{
+            width:100%;
+            height:auto;
+            text-align: center;
+            background-color: #d15b17;
+            padding:40px 50px 70px;
+            
+            
+            
+        }
+
+        .contact p {
+            
+            color:white;
+        }
+
+        .contact h2 {
+            margin-bottom:50px;
+            text-decoration: underline;
+            color:rgb(230, 144, 16);
+        
+        }
+
+       
+
+        .contact-form{
+            max-width: 1000px;
+            display: flex;
+            text-align: center;
+            max-width: 1000px;
+            margin: 0 auto;
+            color:white;
+        }
+
+        .contact-details{
+            
+            height: 350px;
+            width: 350px;
+            align-items: center;
+            text-align: left;
+            margin-top: 9px;
+            margin-left: 250px;
+
+        }
+
+        .contact-details a{
+
+            color:black;
+            margin-left: 20px;
+            text-align: justify;
+            text-decoration: none;
+        }
+
+        .contact-details h3{
+
+            color:rgb(230, 144, 16);
+            
+        }
+            
+
+
+        footer{
+
+                height:auto;
+                width:100%;
+                background-color: #622400;
+                padding:40px 50px 30px;
+                
+            }
+
+        footer.container{
+                display:flex;
+                align-items: center;
+                height:100%;
+            }
+
+        .social-media{
+                font-size:200%;
+                width:auto;
+                margin-left:auto;
+            }
+
+        .social-media a i{
+                color:rgb(230, 144, 16);
+                transition: 0.2s;
+            }
+
+        .social-media a i:hover{
+                color:#d27843;
+                
+            }
+
+        .copyright{
+                color:white;
+            }
+
+       
+
+            
+
+
+        
+
+       
+
+
+
+
+
+
+
+
+
+        
+
+
+
+    </style>
+
+    
+
+
+
+       
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#aboutme">ABOUT ME</a></li>
+            <li><a href="#skills">DIGITAL SKILLS</a></li>
+            <li><a href="#languages">LANGUAGE SKILLS</a></li>
+            <li><a href="#project">PROJECTS</a></li>
+            <li><a href="#contactme">CONTACT ME</a></li>
+
+        </ul>
+    </nav>
+
+    <section class="rodrigoserra">
+        <div class="container">
+
+            <img src="imagens/rodrigo2023.jpg">
+            <h1>Welcome to my Web Curriculum!! I'm Rodrigo!</h1>
+
+            <h1>Grateful for my journey so far, but eager to grow more professionally and explore an area that really captivates me. 
+            <h1>I am currently looking for a new job opportunity!!</h1>
+
+        </div>
+
+    </section>
+
+
+    <section id="aboutme" class="aboutme">
+        <h2>ABOUT ME</h2>
+
+        <div class="aboutme-section">
+
+            <div class="img">
+                <div class="aboutme-image"></div>
+            </div>
+
+            <div class="aboutme-text">
+
+                <p> I'm a young man passionate about innovation, technology, and science, with a chemistry and biomedical science background. I started my professional career as a quality control analyst at Frulact S.A, a food industry company specialising in fruit processing. Here I developed agility, autonomy, critical spirit, and attention to detail and many more skills that only practice allows.</p>
+                <p> I have competencies in the areas of mathematics, programming, entrepreneurship, and sciences. Furthermore, I acquired skills in different languages (MATLAB, Phyton, Abaqus) and databases (SQL). I have very strong written and verbal communication skills and am extremely goal oriented.</p>
+                <p> I am aware of the constant need to learn and evolve, hence my passion for reading and taking new courses. I am autonomous, and much of the knowledge I have is the result of the research I do every day.</p>
+          </div>
+
+        
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="skill">
+            <h2>DIGITAL SKILLS</h2>
+            <div class="skills">
+
+                <div class="python-skills" id="text">
+                    <div class="text">
+                        <h3 class="skill-name">PYTHON SKILLS</h3>
+                        <div class="content">
+                            <p>I have medium skills in this programming language. I create routines to optimize and solve problems. </p>
+                        </div>
+
+                        <a class="button" href="https://www.w3schools.com/python/" target="_bank"> More about PYTHON...</a>
+
+                
+                    </div>
+                </div>
+
+                <div class="html5-skills">
+                    <div class="text">
+                        <h3 class="skill-name">HTML SKILLS</h3>
+                        <div class="content">
+                            <p> I have medium skills in this programming language. This Web Curriculum is my second project with this language.</p>
+                        </div>
+
+                        <a class="button" href="https://www.w3schools.com/html/" target="_bank"> More about HTML5...</a>
+
+                
+                    </div>
+                </div>
+
+                <div class="css-skills">
+                    <div class="text">
+                        <h3 class="skill-name">CSS SKILLS</h3>
+                        <div class="content">
+                            <p> I have medium skills in this programming language.</p>
+                        </div>
+
+                        <a class="button" href="https://www.w3schools.com/css/" target="_bank"> More about CSS...</a>
+
+                
+                    </div>
+                </div>
+
+                <div class="mysql-skills">
+                    <div class="text">
+                        <h3 class="skill-name">MySQL SKILLS</h3>
+                        <div class="content">
+                            <p> I have medium skills in this programming language. Agility in the use of MySQL as a data management tool (design, modelling, implementation).</p>
+                        </div>
+
+                        <a class="button" href="https://www.w3schools.com/css/" target="_bank"> More about MySQL...</a>
+
+                
+                    </div>
+                </div>
+
+                <div class="solidworks-skills">
+                    <div class="text">
+                        <h3 class="skill-name">SOLIDWORKS SKILLS</h3>
+                        <div class="content">
+                            <p> I have medium skills in this software CAD. Proficient in creating 2D and 3D sketches. Operating with meshes, surfaces, and solids.</p>
+                        </div>
+
+                        <a class="button" href="https://discover.solidworks.com/pt-br/solidworks-products-v2?utm_campaign=202001_glo_ps_sea_pt_XOP6876_labl_brand_ewe_pt&utm_medium=cpc&utm_source=google&utm_content=search&utm_medium=cpc&utm_source=google&utm_campaign=&mktid=&gclid=CjwKCAiA5sieBhBnEiwAR9oh2icYAeseBf_pZSyQ7yMevFe2GiBqyIFRYPGglGl2642kZTEMBe6OKBoCOx8QAvD_BwE" target="_bank"> More about SolidWorks...</a>
+
+                
+                    </div>
+                </div>
+
+                <div class="java-skills">
+                    <div class="text">
+                        <h3 class="skill-name">JAVASCRIPT SKILLS</h3>
+                        <div class="content">I have soft skills in this programming language.</p>
+                        </div>
+
+                        <a class="button" href="https://www.w3schools.com/js/" target="_bank"> More about Javascript...</a>
+
+                
+                    </div>
+                </div>
+
+                <div class="php-skills">
+                    <div class="text">
+                        <h3 class="skill-name">PHP SKILLS</h3>
+                        <div class="content">I have soft skills in this programming language.</p>
+                        </div>
+
+                        <a class="button" href="https://www.w3schools.com/js/" target="_bank"> More about php...</a>
+
+                
+                    </div>
+                </div>
+
+
+
+
+            </div>    
+        </div>
+
+    </section>
+
+    <section id="languages">
+        <div class="language">
+            <h2>LANGUAGE SKILLS</h2>
+            <div class="languages">
+
+
+                <div class="english-skills">
+                    <div class="text1">
+                        <h3 class="skill-name">ENGLISH SKILLS</h3>
+                        <div class="content">Press play and listen to me!!</p>
+                        </div>
+
+                        <audio preload="metadata" controls autoplay loop>
+
+                            <source src="audio/audioen.mp3" type="audio/mpeg">
+
+                            
+                        </audio>
+
+                
+                    </div>
+                </div>
+
+                <div class="spanish-skills">
+                    <div class="text1">
+                        <h3 class="skill-name">SPANISH SKILLS</h3>
+                        <div class="content">Presiona inicio y escúchame!!</p>
+                        </div>
+
+                        <audio preload="metadata" controls autoplay loop>
+
+                            <source src="audio/audioes.mp3" type="audio/mpeg">
+
+                            
+                        </audio>
+
+                
+                    </div>
+                </div>
+
+            </div>
+            
+        </div>
+
+    </section>
+
+    <section id="project" class="project">
+        <h2>PROJECTS</h2>
+
+        <div class="project-section">
+
+            <div class="img">
+                <div class="project-image"></div>
+            </div>
+
+            <div class="project-text">
+
+                <p> During my degree in Biomedical Science, I participated in a project, in the discipline of Programming, named "Timed Up and Go test (TUG)".</p>
+                <p> A group with different physical conditions was subjected to activities (running, walking, jumping) always linked to an ECG. Through MATLAB programming, the information collected from the information provided by the patient and the data collected by signals and mobility analysis, using EMG e ECG, was monitored. This project aimed to monitor sedentary lifestyles in Portugal.</p>
+                <p> To learn more about my project click on the link below.</p>
+                <a class="button1" href="https://drive.google.com/file/d/1_vpsOuqqpJFJR9lumlV3PZ5awLsn-PcL/view?usp=sharing " target="blank"> >>Click here to learn more<< </a>
+          </div>
+
+        
+        </div>
+    </section>
+
+    <section id="contactme" class="contact">
+        <h2>CONTACT ME</h2>
+        <p>Use the information in this form to get in touch with me, I would love to near from you!</p>
+        <p>Here below in the footer I will leave two links through which you can contact me.</p>
+
+        <form class="contact-form">
+
+            <div class="contact-details">
+
+                <h3>Name:<a> Rodrigo Ramos Serra</a></h3>
+                
+                <h3>Adress:<a> Braga/Fundão</a></h3>
+                
+                <h3>Birthday:<a> 26-03-1994</a></h3>
+                
+                <h3>Nationality:<a> Portuguese</a></h3>
+                
+                <h3>Phone Number:<a> (+351)965108335</a></h3>
+                
+                <h3>Email Adress:<a> r.ramos.serra@gmail.com</a></h3>
+                
+
+            </div>
+
+
+        </form>
+
+    </section>
+
+   
+    <footer>
+        <div class="container">
+    
+
+                <div class="social-media">
+
+                    <a href="https://www.facebook.com/rs.eme.26/"><i class="fa fa-facebook-official"></i></a>
+
+                    <a href="https://www.linkedin.com/in/rodrigo-ramos-s-071783118/"><i class="fa fa-linkedin-square"></i></a>
+
+
+                </div>
+
+            
+                <div class="copyrigth">
+
+                    This site &copy; 2023 Rodrigo Serra
+
+                </div>
+
+        </div>
+    </footer>
+
+    
+
+</body>
+</html>
